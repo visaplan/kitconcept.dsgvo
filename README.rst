@@ -27,19 +27,27 @@ kitconcept.dsgvo
    :alt: kitconcept
    :target: https://kitconcept.com/
 
-Tell me what your product does
+The General Data Protection Regulation ("GDPR" or "DSGVO" in German) is a regulation in EU law on data protection and privacy for all individuals within the European Union.
+
+kitconcept.dsgvo implements the technical requirements that are necessary to be compliant with this regulation.
+
+Please keep in mind that this add-on covers only the technical aspects of the regulation.
+We highly recommend to consult a laywer to properly implement the regulation.
 
 Features
 --------
 
-- Can be bullet points
-
+- [ ] Store username, date, time and IP address of the user on registration
+- [ ] Opt-out for storing cookies
+- [ ] Extensible registration form with user confirmation
+- [ ] Export user data
 
 Examples
 --------
 
 This add-on can be seen in action at the following sites:
-- Is there a page on the internet where everybody can see the features?
+
+- VHS-Ehrenamtsportal.de
 
 
 Documentation
@@ -53,7 +61,7 @@ Translations
 
 This product has been translated into
 
-- Klingon (thanks, K'Plai)
+- German
 
 
 Installation
@@ -75,8 +83,8 @@ and then running ``bin/buildout``
 Contribute
 ----------
 
-- Issue Tracker: https://github.com/collective/kitconcept.dsgvo/issues
-- Source Code: https://github.com/collective/kitconcept.dsgvo
+- Issue Tracker: https://github.com/kitconcept/kitconcept.dsgvo/issues
+- Source Code: https://github.com/kitconcept/kitconcept.dsgvo
 - Documentation: https://docs.plone.org/foo/bar
 
 
