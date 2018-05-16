@@ -34,6 +34,11 @@
       factory=".setuphandlers.HiddenProfiles"
       name="kitconcept.dsgvo-hiddenprofiles" />
 
+    <!-- Event subscribers -->
+    <subscriber
+        for="* Products.PluggableAuthService.interfaces.events.IPrincipalCreatedEvent"
+        handler=".events.user_registered" />
+
   <!-- User data schema and form adapters -->
   <adapter
       factory=".userdataschema.UserDataPanelExtender"
