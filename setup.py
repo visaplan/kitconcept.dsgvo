@@ -42,6 +42,8 @@ setup(
         'Products.GenericSetup>=1.8.2',
         'setuptools',
         'z3c.jbot',
+        'plone.app.z3cform',
+        'plone.api',
     ],
     extras_require={
         'test': [

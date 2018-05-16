@@ -2,12 +2,13 @@
     xmlns="http://namespaces.zope.org/zope"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
+    xmlns:z3c="http://namespaces.zope.org/z3c"
     i18n_domain="kitconcept.dsgvo">
 
   <i18n:registerTranslations directory="locales" />
 
   <includeDependencies package="." />
-
+  <include package="plone.app.z3cform" />
   <include package=".browser" />
 
 
@@ -32,5 +33,47 @@
   <utility
       factory=".setuphandlers.HiddenProfiles"
       name="kitconcept.dsgvo-hiddenprofiles" />
+
+  <!-- User data schema and form adapters -->
+  <adapter
+      factory=".userdataschema.UserDataPanelExtender"
+      provides="plone.z3cform.fieldsets.interfaces.IFormExtender" />
+
+  <adapter
+      factory=".userdataschema.RegistrationPanelExtender"
+      provides="plone.z3cform.fieldsets.interfaces.IFormExtender" />
+
+  <adapter
+      factory=".userdataschema.AddUserFormExtender"
+      provides="plone.z3cform.fieldsets.interfaces.IFormExtender" />
+
+  <adapter
+      provides=".userdataschema.IDsgvoUserDataSchema"
+      for="plone.app.layout.navigation.interfaces.INavigationRoot"
+      factory=".userdataschema.DsgvoUserDataSchemaAdapter"
+      />
+
+  <!-- Checkbox widget that renders descripton html -->
+  <adapter
+      factory=".widget.DsgvoSingleCheckBoxBoolFieldWidget"
+      for="zope.schema.interfaces.IBool
+           .interfaces.IKitconceptDsgvoLayer"
+      />
+
+  <z3c:widgetTemplate
+      mode="display"
+      field="zope.schema.interfaces.IBool"
+      widget=".interfaces.IDsgvoSingleCheckBoxBoolWidget"
+      layer="plone.app.z3cform.interfaces.IPloneFormLayer"
+      template="templates/singlecheckboxbool_display.pt"
+      />
+
+  <z3c:widgetTemplate
+      mode="input"
+      field="zope.schema.interfaces.IBool"
+      widget=".interfaces.IDsgvoSingleCheckBoxBoolWidget"
+      layer="plone.app.z3cform.interfaces.IPloneFormLayer"
+      template="templates/singlecheckboxbool_input.pt"
+      />
 
 </configure>
