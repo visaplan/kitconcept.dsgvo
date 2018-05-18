@@ -23,3 +23,8 @@
 .dsgvo-close-banner:hover {
     text-decoration: none;
 }
+
+#form-widgets-dsgvo_contact_info_text input,
+#form-widgets-dsgvo_contact_info_text .required {
+    display: none;
+}

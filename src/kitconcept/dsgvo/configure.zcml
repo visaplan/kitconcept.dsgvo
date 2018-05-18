@@ -51,6 +51,12 @@
       permission="zope2.View"
       />
 
+  <!-- Contact form extender -->
+  <adapter
+      factory=".contactform.ContactFormExtender"
+      provides="plone.z3cform.fieldsets.interfaces.IFormExtender" />
+
+
   <!-- User data schema and form adapters -->
   <adapter
       factory=".userdataschema.UserDataPanelExtender"
