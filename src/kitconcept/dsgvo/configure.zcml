@@ -1,5 +1,6 @@
 <configure
     xmlns="http://namespaces.zope.org/zope"
+    xmlns:browser="http://namespaces.zope.org/browser"
     xmlns:genericsetup="http://namespaces.zope.org/genericsetup"
     xmlns:i18n="http://namespaces.zope.org/i18n"
     xmlns:z3c="http://namespaces.zope.org/z3c"
@@ -38,6 +39,17 @@
     <subscriber
         for="* Products.PluggableAuthService.interfaces.events.IPrincipalCreatedEvent"
         handler=".events.user_registered" />
+
+
+    <!-- Viewlet -->
+    <browser:viewlet
+        name="kitconcept.dsgvo.infobanner"
+        manager="plone.app.layout.viewlets.interfaces.IMainNavigation"
+        class=".viewlet.DsgvoViewlet"
+        template="viewlet.pt"
+        layer="kitconcept.dsgvo.interfaces.IKitconceptDsgvoLayer"
+        permission="zope2.View"
+        />
 
   <!-- User data schema and form adapters -->
   <adapter

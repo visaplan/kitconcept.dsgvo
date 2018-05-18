@@ -1,0 +1,25 @@
+.dsgvo-banner {
+    position: fixed;
+    bottom: 0;
+    width: 100%;
+    z-index: 99;
+    padding: 1em;
+    padding-right: 1.5em;
+    background-color: #7099bf;
+}
+
+.dsgvo-close-banner {
+    cursor: pointer;
+    position: absolute;
+    margin: 0;
+    top: 0.2em;
+    right: .5em;
+    transition: opacity .1s ease;
+    font-size: 24px;
+    font-weight: 100;
+    line-height: 1;
+}
+
+.dsgvo-close-banner:hover {
+    text-decoration: none;
+}
