@@ -35,21 +35,21 @@
       factory=".setuphandlers.HiddenProfiles"
       name="kitconcept.dsgvo-hiddenprofiles" />
 
-    <!-- Event subscribers -->
-    <subscriber
-        for="* Products.PluggableAuthService.interfaces.events.IPrincipalCreatedEvent"
-        handler=".events.user_registered" />
+  <!-- Event subscribers -->
+  <subscriber
+      for="* Products.PluggableAuthService.interfaces.events.IPrincipalCreatedEvent"
+      handler=".events.user_registered" />
 
 
-    <!-- Viewlet -->
-    <browser:viewlet
-        name="kitconcept.dsgvo.infobanner"
-        manager="plone.app.layout.viewlets.interfaces.IMainNavigation"
-        class=".viewlet.DsgvoViewlet"
-        template="viewlet.pt"
-        layer="kitconcept.dsgvo.interfaces.IKitconceptDsgvoLayer"
-        permission="zope2.View"
-        />
+  <!-- Viewlet -->
+  <browser:viewlet
+      name="kitconcept.dsgvo.infobanner"
+      manager="plone.app.layout.viewlets.interfaces.IMainNavigation"
+      class=".viewlet.DsgvoViewlet"
+      template="viewlet.pt"
+      layer="kitconcept.dsgvo.interfaces.IKitconceptDsgvoLayer"
+      permission="zope2.View"
+      />
 
   <!-- User data schema and form adapters -->
   <adapter
