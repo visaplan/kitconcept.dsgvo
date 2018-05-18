@@ -1,14 +1,9 @@
 <div class="dsgvo-banner">
-  <a class="dsgvo-close-banner"
-     href=""
-     tal:attributes="href string:${view/portal_url}/@@close-dsgvo-banner">
+  <a class="dsgvo-close-banner">
     x
   </a>
   <div tal:content="structure view/info">
-    Ihre Anfrage wird verschlüsselt per https an unseren Server geschickt.
-    Sie erklären sich damit einverstanden, dass wir die Angaben zur
-    Beantwortung Ihrer Anfrage verwenden dürfen. Hier finden Sie unsere
-    <a href="privacy">Datenschutzerklärung und Widerrufhinweise</a>
+    Um unsere Webseite für Sie optimal zu gestalten und fortlaufend...
   </div>
     
 </div>

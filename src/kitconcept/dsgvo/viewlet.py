@@ -19,12 +19,12 @@ class DsgvoViewlet(base.ViewletBase):
         msg = _(
             u'dsgvo_info_banner',
             default=(
-                u'Ihre Anfrage wird verschlüsselt per https an unseren '
-                u'Server geschickt. Sie erklären sich damit einverstanden, '
-                u'dass wir die Angaben zur Beantwortung Ihrer Anfrage '
-                u'verwenden dürfen. Hier finden Sie unsere '
-                u'<a href="${portal_url}/privacy">Datenschutzerklärung und '
-                u'Widerrufhinweise</a>.'),
+                u'Um unsere Webseite für Sie optimal zu gestalten und '
+                u'fortlaufend verbessern zu können, verwenden wir Cookies. '
+                u'Durch die weitere Nutzung der Webseite stimmen Sie der '
+                u'Verwendung von Cookies zu. Weitere Informationen zu '
+                u'Cookies erhalten Sie in unserer'
+                u'<a href="${portal_url}/privacy">Datenschutzerklärung</a>.'),
                 )
         return dsgvo_translate(msg, self.request)
 

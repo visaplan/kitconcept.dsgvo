@@ -4,7 +4,7 @@
     width: 100%;
     z-index: 99;
     padding: 1em;
-    padding-right: 1.5em;
+    padding-right: 2em;
     background-color: #7099bf;
 }
 
@@ -12,10 +12,10 @@
     cursor: pointer;
     position: absolute;
     margin: 0;
-    top: 0.2em;
-    right: .5em;
+    top: 0.3em;
+    right: .6em;
     transition: opacity .1s ease;
-    font-size: 24px;
+    font-size: 18px;
     font-weight: 100;
     line-height: 1;
 }
