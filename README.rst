@@ -40,6 +40,10 @@ Features
 - [ ] Store username, date, time and IP address of the user on registration
 - [ ] Opt-out for storing cookies
 - [ ] Extensible registration form with user confirmation
+- [ ] Contact form with information text. Default value:
+
+"Ihre Anfrage wird verschlüsselt per https an unseren Server geschickt. Sie erklären sich damit einverstanden, dass wir die Angaben zur Beantwortung Ihrer Anfrage verwenden dürfen. Hier finden Sie unsere [Link]Datenschutzerklärung und Widerrufhinweise[/Link]."
+
 - [ ] Export user data
 
 Examples
