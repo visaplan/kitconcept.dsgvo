@@ -31,20 +31,33 @@ The General Data Protection Regulation ("GDPR" or "DSGVO" in German) is a regula
 
 kitconcept.dsgvo implements the technical requirements that are necessary to be compliant with this regulation.
 
-Please keep in mind that this add-on covers only the technical aspects of the regulation.
-We highly recommend to consult a laywer to properly implement the regulation.
+We strongly suggest to consult a Plone solution provider for the technical implications and a laywer for the legal implications of the DSGVO/GDPR.
+
+Don't hesitate to contact us under info@kitconcept.com if you need assistance with implementing the DSGVO/GDPR.
 
 Features
 --------
 
-- [ ] Store username, date, time and IP address of the user on registration
-- [ ] Opt-out for storing cookies
-- [ ] Extensible registration form with user confirmation
-- [ ] Contact form with information text. Default value:
-
-"Ihre Anfrage wird verschlüsselt per https an unseren Server geschickt. Sie erklären sich damit einverstanden, dass wir die Angaben zur Beantwortung Ihrer Anfrage verwenden dürfen. Hier finden Sie unsere [Link]Datenschutzerklärung und Widerrufhinweise[/Link]."
-
+- [X] Opt-out banner for storing cookies
+- [X] Extensible registration form with user confirmation
+- [X] Contact form with information text
+- [X] Store username, date, time and IP address of the user on registration
 - [ ] Export user data
+
+Registration Form
+^^^^^^^^^^^^^^^^^
+
+Default text (German)::
+
+    "Ich habe die [Link] Datenschutzerklärung und Widerrufhinweise[/Link] gelesen und akzeptiere diese."
+
+Contact Form
+^^^^^^^^^^^^
+
+Default text (German)::
+
+    "Ihre Anfrage wird verschlüsselt per https an unseren Server geschickt. Sie erklären sich damit einverstanden, dass wir die Angaben zur Beantwortung Ihrer Anfrage verwenden dürfen. Hier finden Sie unsere [Link]Datenschutzerklärung und Widerrufhinweise[/Link]."
+
 
 Examples
 --------
@@ -52,12 +65,6 @@ Examples
 This add-on can be seen in action at the following sites:
 
 - VHS-Ehrenamtsportal.de
-
-
-Documentation
--------------
-
-Full documentation for end users can be found in the "docs" folder, and is also available online at http://docs.plone.org/foo/bar
 
 
 Translations
@@ -89,14 +96,12 @@ Contribute
 
 - Issue Tracker: https://github.com/kitconcept/kitconcept.dsgvo/issues
 - Source Code: https://github.com/kitconcept/kitconcept.dsgvo
-- Documentation: https://docs.plone.org/foo/bar
 
 
 Support
 -------
 
-If you are having issues, please let us know.
-We have a mailing list located at: project@example.com
+If you are having issues, or you need assistance implementing the DSGVO / GDPR for your website, don't hesitate to contact us at info@kitconcept.com.
 
 
 License
