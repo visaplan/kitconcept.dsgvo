@@ -30,7 +30,7 @@ class IDsgvoUserDataSchema(model.Schema):
         title=_(u'label_dsgvo_accept',
                 default=(
                     u'Ich habe die <a href="${portal_url}/datenschutz">'
-                    u'Datenschutzerklärung und Widerrufhinweise</a>. '
+                    u'Datenschutzerklärung und Widerrufhinweise</a> '
                     u'gelesen und akzeptiere diese.')),
         description=_(
             u'help_dsgvo_accept',
