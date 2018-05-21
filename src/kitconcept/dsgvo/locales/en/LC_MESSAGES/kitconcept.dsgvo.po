@@ -1,7 +1,7 @@
 msgid ""
 msgstr ""
 "Project-Id-Version: PACKAGE VERSION\n"
-"POT-Creation-Date: 2018-05-19 09:56+0000\n"
+"POT-Creation-Date: 2018-05-21 10:35+0000\n"
 "PO-Revision-Date: YEAR-MO-DA HO:MI +ZONE\n"
 "Last-Translator: FULL NAME <EMAIL@ADDRESS>\n"
 "Language-Team: LANGUAGE <LL@li.org>\n"
@@ -22,12 +22,12 @@ msgstr ""
 msgid "Uninstalls the kitconcept.dsgvo add-on."
 msgstr ""
 
-#. Default: "Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer<a href=\"${portal_url}/privacy\">Datenschutzerklärung</a>."
+#. Default: "Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href=\"${portal_url}/datenschutz\">Datenschutzerklärung</a>."
 #: ../viewlet.py:19
 msgid "dsgvo_info_banner"
 msgstr ""
 
-#: ../userdataschema.py:33
+#: ../userdataschema.py:34
 msgid "help_dsgvo_accept"
 msgstr ""
 
@@ -43,7 +43,7 @@ msgstr ""
 msgid "kitconcept.dsgvo (uninstall)"
 msgstr ""
 
-#. Default: "I Accept the <a href=\"${portal_url}/privacy\">${site_title} privacy policy</a>."
+#. Default: "Ich habe die <a href=\"${portal_url}/datenschutz\">Datenschutzerklärung und Widerrufhinweise</a>. gelesen und akzeptiere diese."
 #: ../userdataschema.py:29
 msgid "label_dsgvo_accept"
 msgstr ""
@@ -53,7 +53,7 @@ msgstr ""
 msgid "label_dsgvo_accept_invalid"
 msgstr ""
 
-#. Default: "Ihre Anfrage wird verschlüsselt per https an unseren Server geschickt. Sie erklären sich damit einverstanden, dass wir die Angaben zur Beantwortung Ihrer Anfrage verwenden dürfen. Hier finden Sie unsere <a href=\"${portal_url}/privacy\">Datenschutzerklärung und Widerrufhinweise</a>."
+#. Default: "Ihre Anfrage wird verschlüsselt per https an unseren Server geschickt. Sie erklären sich damit einverstanden, dass wir die Angaben zur Beantwortung Ihrer Anfrage verwenden dürfen. Hier finden Sie unsere <a href=\"${portal_url}/datenschutz\">Datenschutzerklärung und Widerrufhinweise</a>."
 #: ../contactform.py:21
 msgid "label_dsgvo_info"
 msgstr ""
