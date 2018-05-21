@@ -1,7 +1,6 @@
 .dsgvo-banner {
     position: fixed;
     bottom: 0;
-    width: 100%;
     z-index: 99;
     padding: 1em;
     padding-right: 2em;
