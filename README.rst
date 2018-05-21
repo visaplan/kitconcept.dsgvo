@@ -36,7 +36,7 @@ We strongly suggest to consult a Plone solution provider for the technical impli
 Don't hesitate to contact us under info@kitconcept.com if you need assistance with implementing the DSGVO/GDPR.
 
 Features
---------
+========
 
 - [X] Opt-out banner for storing cookies
 - [X] Extensible registration form with user confirmation
@@ -45,14 +45,14 @@ Features
 - [ ] Export user data
 
 Registration Form
-^^^^^^^^^^^^^^^^^
+-----------------
 
 Default text (German)::
 
     "Ich habe die [Link] Datenschutzerklärung und Widerrufhinweise[/Link] gelesen und akzeptiere diese."
 
 Contact Form
-^^^^^^^^^^^^
+------------
 
 Default text (German)::
 
@@ -60,7 +60,7 @@ Default text (German)::
 
 
 Examples
---------
+========
 
 This add-on can be seen in action at the following sites:
 
@@ -68,7 +68,7 @@ This add-on can be seen in action at the following sites:
 
 
 Translations
-------------
+============
 
 This product has been translated into
 
@@ -76,7 +76,7 @@ This product has been translated into
 
 
 Installation
-------------
+============
 
 Install kitconcept.dsgvo by adding it to your buildout::
 
@@ -92,19 +92,19 @@ and then running ``bin/buildout``
 
 
 Contribute
-----------
+==========
 
 - Issue Tracker: https://github.com/kitconcept/kitconcept.dsgvo/issues
 - Source Code: https://github.com/kitconcept/kitconcept.dsgvo
 
 
 Support
--------
+=======
 
 If you are having issues, or you need assistance implementing the DSGVO / GDPR for your website, don't hesitate to contact us at info@kitconcept.com.
 
 
 License
--------
+=======
 
 The project is licensed under the GPLv2.
