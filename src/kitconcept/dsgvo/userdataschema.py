@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from plone.app.users.browser.account import AccountPanelSchemaAdapter
 from plone.app.users.browser.register import RegistrationForm, AddUserForm
 from plone.app.users.browser.userdatapanel import UserDataPanel
