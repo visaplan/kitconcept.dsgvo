@@ -9,6 +9,7 @@ from z3c.form import field
 from zope import schema
 from zope.component import adapts
 from zope.interface import Interface
+from zope.interface import Invalid
 
 from kitconcept.dsgvo import _
 from kitconcept.dsgvo.interfaces import IKitconceptDsgvoLayer
@@ -16,7 +17,10 @@ from kitconcept.dsgvo.widget import DsgvoSingleCheckBoxBoolFieldWidget
 
 
 def validateAccept(value):
-    return value is True
+    if value is not True:
+        return Invalid(_(
+            u'label_dsgvo_accept_invalid',
+            default=u'You have to accept the privacy policy'))
 
 
 class IDsgvoUserDataSchema(model.Schema):
