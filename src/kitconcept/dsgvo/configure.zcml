@@ -15,12 +15,11 @@
 
 
   <genericsetup:registerProfile
-      name="common"
+      name="install-base"
       title="kitconcept.dsgvo"
       directory="profiles/common"
       description="Installs the kitconcept.dsgvo add-on common config."
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile
@@ -108,6 +107,28 @@
   <!-- Plone 4 -->
   <configure zcml:condition="not-have plone-5">
     
+    <adapter
+        provides=".userdataschema_p4.IDsgvoP4UserDataSchema"
+        for="plone.app.layout.navigation.interfaces.INavigationRoot"
+        factory=".userdataschema_p4.DsgvoP4UserDataSchemaAdapter"
+        />
+
+    <browser:page
+        for="plone.app.layout.navigation.interfaces.INavigationRoot"
+        name="personal-information"
+        class=".userdataschema_p4.DsgvoUserDataPanel"
+        layer=".interfaces.IKitconceptDsgvoLayer"
+        permission="cmf.SetOwnProperties"
+      />
+
+    <browser:page
+        for="plone.app.layout.navigation.interfaces.INavigationRoot"
+        name="user-information"
+        class=".userdataschema_p4.DsgvoUserDataConfiglet"
+        layer=".interfaces.IKitconceptDsgvoLayer"
+        permission="plone.app.controlpanel.UsersAndGroups"
+      />
+
     <genericsetup:registerProfile
         name="default"
         title="kitconcept.dsgvo"
@@ -116,6 +137,7 @@
         provides="Products.GenericSetup.interfaces.EXTENSION"
         post_handler=".setuphandlers.post_install"
         />
+
     <!-- Registration form -->
     <browser:page
         name="register"
