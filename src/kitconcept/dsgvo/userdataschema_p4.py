@@ -21,7 +21,7 @@ def validateAccept(value):
     if value is not True:
         raise InvalidAccept()
     return True
-    
+
 
 class IDsgvoP4UserDataSchema(IUserDataSchema):
     '''
@@ -55,4 +55,3 @@ class EnhancedRegistrationForm(RegistrationForm):
 
     def __init__(self, context, request):
         super(EnhancedRegistrationForm, self).__init__(context, request)
-
