@@ -27,6 +27,8 @@ kitconcept.dsgvo
    :alt: kitconcept
    :target: https://kitconcept.com/
 
+.. warning:: kitconcept is not a law firm. As such, kitconcept does not provide legal advice. The contents and code in this package do not constitute legal advice nor does contributing to the code or communicating with kitconcept or other contributors about the code create an attorney-client relationship.
+
 The General Data Protection Regulation ("GDPR" or "DSGVO" in German) is a regulation in EU law on data protection and privacy for all individuals within the European Union.
 
 kitconcept.dsgvo implements the technical requirements that are necessary to be compliant with this regulation.
