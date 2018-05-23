@@ -11,6 +11,15 @@
       layer="kitconcept.dsgvo.interfaces.IKitconceptDsgvoLayer"
       />
 
+
+  <browser:page
+      name="close-dsgvo-info"
+      for="*"
+      class=".info.SetCookieView"
+      permission="zope2.View"
+      />
+
+
   <!-- Publish static files -->
   <browser:resourceDirectory
       name="kitconcept.dsgvo"
