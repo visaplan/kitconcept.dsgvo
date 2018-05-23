@@ -13,7 +13,7 @@ class InvalidAccept(schema.ValidationError):
 
     __doc__ = _(
             u'label_dsgvo_accept_invalid',
-            default=(u'Bitte akzeptieren sie die Datenschutzerklärung und'
+            default=(u'Bitte akzeptieren sie die Datenschutzerklärung und '
                      u'Widerrufhinweise.'))
 
 
