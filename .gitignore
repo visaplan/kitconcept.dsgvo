@@ -5,6 +5,7 @@
 *.mo
 *.py?
 *.swp
+.vscode
 # dirs
 bin/
 buildout-cache/
