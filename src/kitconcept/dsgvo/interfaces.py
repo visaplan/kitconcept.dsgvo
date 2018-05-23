@@ -11,10 +11,11 @@ from kitconcept.dsgvo import _
 
 def validateAccept(value):
     if value is not True:
-        return Invalid(_(
+        raise Invalid(_(
             u'label_dsgvo_accept_invalid',
-            default=(u'Bitte akzeptieren sie die Datenschutzerklärung und'
+            default=(u'Bitte akzeptieren sie die Datenschutzerklärung und '
                      u'Widerrufhinweise.')))
+    return True
 
 
 class IKitconceptDsgvoLayer(IDefaultBrowserLayer):
