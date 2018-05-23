@@ -54,7 +54,7 @@
 
 
   <!-- Plone 5 -->
-  <configure zcml:condition="not-have plone-4">
+  <configure zcml:condition="have plone-5">
     
     <genericsetup:registerProfile
         name="default"
@@ -106,7 +106,7 @@
   </configure>
 
   <!-- Plone 4 -->
-  <configure zcml:condition="have plone-4">
+  <configure zcml:condition="not-have plone-5">
     
     <genericsetup:registerProfile
         name="default"
