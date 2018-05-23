@@ -12,7 +12,7 @@ from zope.interface import Interface
 
 from kitconcept.dsgvo import _
 from kitconcept.dsgvo.interfaces import IKitconceptDsgvoLayer
-from kitconcept.dsgvo.widget import DsgvoSingleCheckBoxBoolFieldWidget
+from kitconcept.dsgvo.widget import DsgvoSingleCheckBoxFieldWidget
 
 
 class IDsgvoContactInfoSchema(model.Schema):
@@ -40,5 +40,5 @@ class ContactFormExtender(extensible.FormExtender):
     def update(self):
         fields = field.Fields(IDsgvoContactInfoSchema)
         fields['dsgvo_contact_info_text'].widgetFactory = \
-            DsgvoSingleCheckBoxBoolFieldWidget
+            DsgvoSingleCheckBoxFieldWidget
         self.add(fields)

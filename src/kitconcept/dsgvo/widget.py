@@ -1,38 +1,50 @@
 # -*- coding: utf-8 -*-
-from plone.app.z3cform.widget import SingleCheckBoxBoolWidget
+from z3c.form.browser.checkbox import SingleCheckBoxWidget
 from z3c.form.interfaces import IFieldWidget
+from z3c.form.interfaces import ISingleCheckBoxWidget
 from z3c.form.widget import FieldWidget
 from zope.component import adapter
 from zope.interface import implementer
 from zope.interface import implementer_only
 from zope.schema.interfaces import IBool
 
-from kitconcept.dsgvo.interfaces import IDsgvoSingleCheckBoxBoolWidget
 from kitconcept.dsgvo.interfaces import IKitconceptDsgvoLayer
 from kitconcept.dsgvo.util import dsgvo_translate
 
 
-@implementer_only(IDsgvoSingleCheckBoxBoolWidget)
-class DsgvoSingleCheckBoxBoolWidget(SingleCheckBoxBoolWidget):
+class IDsgvoSingleCheckBoxWidget(ISingleCheckBoxWidget):
+    """Marker interface for the SingleCheckboxBoolWidget."""
+
+
+@implementer_only(IDsgvoSingleCheckBoxWidget)
+class DsgvoSingleCheckBoxWidget(SingleCheckBoxWidget):
     """
     Single Input type checkbox widget implementation that renders
     html in the label and help and interpolates the portal url and
     site name
     """
 
-    klass = u'single-checkbox-bool-widget'
+    klass = u'dsgvo-single-checkbox-widget'
 
-    @SingleCheckBoxBoolWidget.label.setter
+    @property
+    def label(self):
+        return getattr(self, '_label', u'')
+
+    @label.setter
     def label(self, value):
         self._label = dsgvo_translate(value, self.request)
 
-    @SingleCheckBoxBoolWidget.description.setter
+    @property
+    def description(self):
+        return getattr(self, '_description', u'')
+
+    @description.setter
     def description(self, value):
         self._description = dsgvo_translate(value, self.request)
 
 
 @adapter(IBool, IKitconceptDsgvoLayer)
 @implementer(IFieldWidget)
-def DsgvoSingleCheckBoxBoolFieldWidget(field, request):
+def DsgvoSingleCheckBoxFieldWidget(field, request):
     """IFieldWidget factory for CheckBoxWidget."""
-    return FieldWidget(field, DsgvoSingleCheckBoxBoolWidget(request))
+    return FieldWidget(field, DsgvoSingleCheckBoxWidget(request))

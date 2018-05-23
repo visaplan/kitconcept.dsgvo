@@ -24,6 +24,8 @@
 }
 
 #form-widgets-dsgvo_contact_info_text input,
-#form-widgets-dsgvo_contact_info_text .required {
+#form-widgets-dsgvo_contact_info_text .required,
+#formfield-form-widgets-dsgvo_accept label.horizontal,
+#formfield-form-widgets-dsgvo_contact_info_text label.horizontal {
     display: none;
 }
