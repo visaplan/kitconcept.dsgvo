@@ -1,4 +1,7 @@
 # -*- coding: utf-8 -*-
+from plone.app.users.browser.personalpreferences import UserDataConfiglet
+from plone.app.users.browser.personalpreferences import UserDataPanel
+from plone.app.users.browser.personalpreferences import UserDataPanelAdapter
 from plone.app.users.browser.register import RegistrationForm
 from plone.app.users.userdataschema import IUserDataSchema
 from plone.app.users.userdataschema import IUserDataSchemaProvider
@@ -55,3 +58,28 @@ class EnhancedRegistrationForm(RegistrationForm):
 
     def __init__(self, context, request):
         super(EnhancedRegistrationForm, self).__init__(context, request)
+
+
+class DsgvoP4UserDataSchemaAdapter(UserDataPanelAdapter):
+
+    def get_dsgvo_accept(self):
+        return self.context.getProperty('dsgvo_accept', '')
+
+    def set_dsgvo_accept(self, value):
+        return self.context.setMemberProperties({'dsgvo_accept': value})
+
+    dsgvo_accept = property(get_dsgvo_accept, set_dsgvo_accept)
+
+
+class DsgvoUserDataPanel(UserDataPanel):
+
+    def __init__(self, context, request):
+        super(DsgvoUserDataPanel, self).__init__(context, request)
+        self.form_fields = self.form_fields.omit('dsgvo_accept')
+
+
+class DsgvoUserDataConfiglet(UserDataConfiglet):
+
+    def __init__(self, context, request):
+        super(DsgvoUserDataConfiglet, self).__init__(context, request)
+        self.form_fields = self.form_fields.omit('dsgvo_accept')
