@@ -1,4 +1,5 @@
 # -*- coding: utf-8 -*-
+from plone.app.z3cform.interfaces import ISingleCheckBoxBoolWidget
 from plone.app.z3cform.widget import SingleCheckBoxBoolWidget
 from z3c.form.interfaces import IFieldWidget
 from z3c.form.widget import FieldWidget
@@ -7,9 +8,12 @@ from zope.interface import implementer
 from zope.interface import implementer_only
 from zope.schema.interfaces import IBool
 
-from kitconcept.dsgvo.interfaces import IDsgvoSingleCheckBoxBoolWidget
 from kitconcept.dsgvo.interfaces import IKitconceptDsgvoLayer
 from kitconcept.dsgvo.util import dsgvo_translate
+
+
+class IDsgvoSingleCheckBoxBoolWidget(ISingleCheckBoxBoolWidget):
+    """Marker interface for the SingleCheckboxBoolWidget."""
 
 
 @implementer_only(IDsgvoSingleCheckBoxBoolWidget)

@@ -5,7 +5,6 @@ from plone.app.users.browser.userdatapanel import UserDataPanel
 from plone.z3cform.fieldsets import extensible
 
 from z3c.form import field
-from z3c.form.interfaces import ISingleCheckBoxWidget
 
 from zope.component import adapts
 from zope.interface import Interface
@@ -13,10 +12,6 @@ from zope.interface import Interface
 from kitconcept.dsgvo.interfaces import IKitconceptDsgvoLayer
 from kitconcept.dsgvo.interfaces import IDsgvoUserDataSchema
 from kitconcept.dsgvo.widget import DsgvoSingleCheckBoxBoolFieldWidget
-
-
-class IDsgvoSingleCheckBoxBoolWidget(ISingleCheckBoxWidget):
-    """Marker interface for the SingleCheckboxBoolWidget."""
 
 
 class DsgvoUserDataSchemaAdapter(AccountPanelSchemaAdapter):

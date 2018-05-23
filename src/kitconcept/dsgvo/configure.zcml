@@ -91,7 +91,7 @@
     <z3c:widgetTemplate
         mode="display"
         field="zope.schema.interfaces.IBool"
-        widget=".interfaces.IDsgvoSingleCheckBoxBoolWidget"
+        widget=".widget.IDsgvoSingleCheckBoxBoolWidget"
         layer="plone.app.z3cform.interfaces.IPloneFormLayer"
         template="templates/singlecheckboxbool_display.pt"
         />
@@ -99,7 +99,7 @@
     <z3c:widgetTemplate
         mode="input"
         field="zope.schema.interfaces.IBool"
-        widget=".interfaces.IDsgvoSingleCheckBoxBoolWidget"
+        widget=".widget.IDsgvoSingleCheckBoxBoolWidget"
         layer="plone.app.z3cform.interfaces.IPloneFormLayer"
         template="templates/singlecheckboxbool_input.pt"
         />
