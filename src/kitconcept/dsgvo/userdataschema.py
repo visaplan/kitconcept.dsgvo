@@ -11,7 +11,7 @@ from zope.interface import Interface
 
 from kitconcept.dsgvo.interfaces import IKitconceptDsgvoLayer
 from kitconcept.dsgvo.interfaces import IDsgvoUserDataSchema
-from kitconcept.dsgvo.widget import DsgvoSingleCheckBoxBoolFieldWidget
+from kitconcept.dsgvo.widget import DsgvoSingleCheckBoxFieldWidget
 
 
 class DsgvoUserDataSchemaAdapter(AccountPanelSchemaAdapter):
@@ -34,7 +34,7 @@ class RegistrationPanelExtender(extensible.FormExtender):
     def update(self):
         fields = field.Fields(IDsgvoUserDataSchema)
         fields['dsgvo_accept'].widgetFactory = \
-            DsgvoSingleCheckBoxBoolFieldWidget
+            DsgvoSingleCheckBoxFieldWidget
         self.add(fields)
 
 

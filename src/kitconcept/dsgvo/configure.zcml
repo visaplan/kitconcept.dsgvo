@@ -81,28 +81,28 @@
         factory=".userdataschema.DsgvoUserDataSchemaAdapter"
         />
 
-    <!-- Checkbox widget that renders descripton html -->
-    <adapter
-      factory=".widget.DsgvoSingleCheckBoxBoolFieldWidget"
-      for="zope.schema.interfaces.IBool
-           .interfaces.IKitconceptDsgvoLayer"
-      />
 
     <z3c:widgetTemplate
         mode="display"
-        field="zope.schema.interfaces.IBool"
-        widget=".widget.IDsgvoSingleCheckBoxBoolWidget"
+        widget=".widget.IDsgvoSingleCheckBoxWidget"
         layer="plone.app.z3cform.interfaces.IPloneFormLayer"
-        template="templates/singlecheckboxbool_display.pt"
+        template="templates/checkbox_display.pt"
         />
 
     <z3c:widgetTemplate
         mode="input"
-        field="zope.schema.interfaces.IBool"
-        widget=".widget.IDsgvoSingleCheckBoxBoolWidget"
+        widget=".widget.IDsgvoSingleCheckBoxWidget"
         layer="plone.app.z3cform.interfaces.IPloneFormLayer"
-        template="templates/singlecheckboxbool_input.pt"
+        template="templates/checkbox_input.pt"
         />
+
+    <z3c:widgetTemplate
+        mode="hidden"
+        widget=".widget.IDsgvoSingleCheckBoxWidget"
+        layer="plone.app.z3cform.interfaces.IPloneFormLayer"
+        template="templates/checkbox_hidden.pt"
+        />
+
   </configure>
 
   <!-- Plone 4 -->
