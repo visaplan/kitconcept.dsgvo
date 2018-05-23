@@ -15,12 +15,11 @@
 
 
   <genericsetup:registerProfile
-      name="common"
+      name="install-base"
       title="kitconcept.dsgvo"
       directory="profiles/common"
       description="Installs the kitconcept.dsgvo add-on common config."
       provides="Products.GenericSetup.interfaces.EXTENSION"
-      post_handler=".setuphandlers.post_install"
       />
 
   <genericsetup:registerProfile

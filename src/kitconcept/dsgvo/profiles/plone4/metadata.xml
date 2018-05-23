@@ -2,6 +2,6 @@
 <metadata>
   <version>1000</version>
   <dependencies>
-    <dependency>profile-kitconcept.dsgvo:common</dependency>
+    <dependency>profile-kitconcept.dsgvo:install-base</dependency>
   </dependencies>
 </metadata>
