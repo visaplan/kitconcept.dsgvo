@@ -4,6 +4,10 @@ cache:
   pip: true
   directories:
     - $HOME/buildout-cache
+env:
+  matrix:
+    - BUILDOUT_CFG=buildout.cfg
+    - BUILDOUT_CFG=buildout-plone4.cfg
 python:
   - 2.7
 before_install:
@@ -13,6 +17,7 @@ before_install:
   - echo "download-cache = $HOME/buildout-cache/downloads" >> $HOME/.buildout/default.cfg
   - echo "eggs-directory = $HOME/buildout-cache/eggs" >> $HOME/.buildout/default.cfg
 install:
+  - sed -ie "s#buildout.cfg#plone-$BUILDOUT_CFG#" travis.cfg
   - python bootstrap-buildout.py -c travis.cfg
   - bin/buildout -Nc travis.cfg
 script:
