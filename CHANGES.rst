@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a6 (unreleased)
+1.0.0a6 (2018-05-24)
 --------------------
 
 - Add development status "alpha" to list classifiers.
