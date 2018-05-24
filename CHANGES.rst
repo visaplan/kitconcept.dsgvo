@@ -5,7 +5,8 @@ Changelog
 1.0.0a7 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix CSS for non box-sizing: border-box; themes.
+  [sneridagh]
 
 
 1.0.0a6 (2018-05-24)
