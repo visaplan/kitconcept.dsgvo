@@ -41,9 +41,10 @@ setup(
     zip_safe=False,
     install_requires=[
         'plone.api',
-        'Products.GenericSetup>=1.8.2',
+        'Products.GenericSetup',
         'setuptools',
         'z3c.jbot',
+        'plone.app.controlpanel',
         'plone.app.z3cform',
         'plone.api',
     ],

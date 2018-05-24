@@ -5,7 +5,9 @@ Changelog
 1.0.0a4 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Add plone.app.controlpanel to requirements to ensure permissions
+  are configured
+  [csenger]
 
 
 1.0.0a3 (2018-05-24)
