@@ -5,7 +5,8 @@ Changelog
 1.0.0a3 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Banner styling changes
+  [csenger]
 
 
 1.0.0a2 (2018-05-23)

@@ -1,10 +1,12 @@
 .dsgvo-banner {
     position: fixed;
     bottom: 0;
+    left: 0;
+    line-height: 1.5em;
     z-index: 99;
     padding: 1em;
     padding-right: 2em;
-    background-color: #7099bf;
+    background-color: #f8f8f9;
 }
 
 .dsgvo-close-banner {
