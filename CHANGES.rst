@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a5 (unreleased)
+1.0.0a5 (2018-05-24)
 --------------------
 
 - Always open links to privacy policy in a new window.
