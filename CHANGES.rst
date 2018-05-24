@@ -5,7 +5,8 @@ Changelog
 1.0.0a5 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Always open links to privacy policy in a new window.
+  [sneridagh]
 
 
 1.0.0a4 (2018-05-24)
