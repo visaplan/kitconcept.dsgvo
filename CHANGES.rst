@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a4 (unreleased)
+1.0.0a4 (2018-05-24)
 --------------------
 
 - Add plone.app.controlpanel to requirements to ensure permissions
