@@ -24,7 +24,7 @@ class DsgvoViewlet(base.ViewletBase):
                 u'Durch die weitere Nutzung der Webseite stimmen Sie der '
                 u'Verwendung von Cookies zu. Weitere Informationen zu '
                 u'Cookies erhalten Sie in unserer '
-                u'<a href="${portal_url}/datenschutz">'
+                u'<a href="${portal_url}/datenschutz" target="_blank">'
                 u'Datenschutzerklärung</a>.'),
                 )
         return dsgvo_translate(msg, self.request)

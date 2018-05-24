@@ -25,7 +25,8 @@ class IDsgvoContactInfoSchema(model.Schema):
                 u'Server geschickt. Sie erklären sich damit einverstanden, '
                 u'dass wir die Angaben zur Beantwortung Ihrer Anfrage '
                 u'verwenden dürfen. Hier finden Sie unsere '
-                u'<a href="${portal_url}/datenschutz">Datenschutzerklärung '
+                u'<a href="${portal_url}/datenschutz" '
+                u'target="_blank">Datenschutzerklärung '
                 u'und Widerrufhinweise</a>.')),
         description=_(
             u'help_dsgvo_info',

@@ -34,7 +34,8 @@ class IDsgvoP4UserDataSchema(IUserDataSchema):
     dsgvo_accept = schema.Bool(
         title=_(u'label_dsgvo_accept',
                 default=(
-                    u'Ich habe die <a href="${portal_url}/datenschutz">'
+                    u'Ich habe die <a href="${portal_url}/datenschutz" '
+                    u'target="_blank">'
                     u'Datenschutzerklärung und Widerrufhinweise</a> '
                     u'gelesen und akzeptiere diese.')),
         description=_(

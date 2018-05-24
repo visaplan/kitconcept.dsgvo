@@ -25,7 +25,7 @@ msgstr ""
 #. Default: "Um unsere Webseite für Sie optimal zu gestalten und fortlaufend verbessern zu können, verwenden wir Cookies. Durch die weitere Nutzung der Webseite stimmen Sie der Verwendung von Cookies zu. Weitere Informationen zu Cookies erhalten Sie in unserer <a href=\"${portal_url}/datenschutz\">Datenschutzerklärung</a>."
 #: ../viewlet.py:19
 msgid "dsgvo_info_banner"
-msgstr "Our website uses cookies to help provide you with the best experience we can. By continuing to use the website, you agree to the use of cookies. For more information about cookies, please visit our <a href='${portal_url}/datenschutz'>privacy policy.</a>"
+msgstr "Our website uses cookies to help provide you with the best experience we can. By continuing to use the website, you agree to the use of cookies. For more information about cookies, please visit our <a href='${portal_url}/datenschutz' target='_blank'>privacy policy.</a>"
 
 #: ../userdataschema.py:34
 msgid "help_dsgvo_accept"
@@ -33,7 +33,7 @@ msgstr ""
 
 #: ../contactform.py:30
 msgid "help_dsgvo_info"
-msgstr "Your request will be encrypted and sent via https to our servers. By submitting this form you agree that we use the submitted data to reply to your enquiry. Here you will find our <a href='${portal_url}/datenschutz'>privacy policy and disclaimer </a>."
+msgstr "Your request will be encrypted and sent via https to our servers. By submitting this form you agree that we use the submitted data to reply to your enquiry. Here you will find our <a href='${portal_url}/datenschutz' target='_blank'>privacy policy and disclaimer </a>."
 
 #: ../configure.zcml:23
 msgid "kitconcept.dsgvo"
@@ -46,7 +46,7 @@ msgstr ""
 #. Default: "Ich habe die <a href=\"${portal_url}/datenschutz\">Datenschutzerklärung und Widerrufhinweise</a>. gelesen und akzeptiere diese."
 #: ../userdataschema.py:29
 msgid "label_dsgvo_accept"
-msgstr "I have read the <a href='${portal_url}/datenschutz'> privacy policy and revocation notice</a> and I accept them."
+msgstr "I have read the <a href='${portal_url}/datenschutz' target='_blank'> privacy policy and revocation notice</a> and I accept them."
 
 #. Default: "You have to accept the privacy policy"
 #: ../userdataschema.py:21
@@ -56,4 +56,4 @@ msgstr "Please accept the privacy policy."
 #. Default: "Ihre Anfrage wird verschlüsselt per https an unseren Server geschickt. Sie erklären sich damit einverstanden, dass wir die Angaben zur Beantwortung Ihrer Anfrage verwenden dürfen. Hier finden Sie unsere <a href=\"${portal_url}/datenschutz\">Datenschutzerklärung und Widerrufhinweise</a>."
 #: ../contactform.py:21
 msgid "label_dsgvo_info"
-msgstr "Your request will be encrypted and sent via https to our servers. By submitting this form you agree that we use the submitted data to reply to your enquiry. Here you will find our <a href='${portal_url}/datenschutz'>privacy policy and disclaimer </a>."
+msgstr "Your request will be encrypted and sent via https to our servers. By submitting this form you agree that we use the submitted data to reply to your enquiry. Here you will find our <a href='${portal_url}/datenschutz' target='_blank'>privacy policy and disclaimer </a>."

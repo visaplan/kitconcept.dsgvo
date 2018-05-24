@@ -168,7 +168,7 @@
                       dass wir die Angaben zur Beantwortung Ihrer Anfrage
                       verwenden dürfen. Hier finden Sie unsere
                       <a href="/datenschutz"
-                         tal:attributes="href string:$portal_url/datenschutz">Datenschutzerklärung
+                         tal:attributes="href string:$portal_url/datenschutz; target string:_blank">Datenschutzerklärung
                       und Widerrufhinweise</a>.
                       </b>
                     </p>
