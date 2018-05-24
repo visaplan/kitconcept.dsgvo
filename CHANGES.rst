@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a7 (unreleased)
+1.0.0a7 (2018-05-24)
 --------------------
 
 - Fix CSS for non box-sizing: border-box; themes.
