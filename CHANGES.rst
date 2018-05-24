@@ -5,7 +5,8 @@ Changelog
 1.0.0a6 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Add development status "alpha" to list classifiers.
+  [timo]
 
 
 1.0.0a5 (2018-05-24)
