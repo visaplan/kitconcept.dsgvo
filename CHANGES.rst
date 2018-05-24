@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a3 (unreleased)
+1.0.0a3 (2018-05-24)
 --------------------
 
 - Add jbot override for contact-info.cpt
