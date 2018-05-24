@@ -1,4 +1,6 @@
 # -*- coding: utf-8 -*-
+
+from plone.app.form.widgets.checkboxwidget import CheckBoxWidget
 from plone.app.users.browser.personalpreferences import UserDataConfiglet
 from plone.app.users.browser.personalpreferences import UserDataPanel
 from plone.app.users.browser.personalpreferences import UserDataPanelAdapter
@@ -7,9 +9,20 @@ from plone.app.users.userdataschema import IUserDataSchema
 from plone.app.users.userdataschema import IUserDataSchemaProvider
 
 from zope import schema
+from zope.i18nmessageid import Message
 from zope.interface import implements
 
 from kitconcept.dsgvo import _
+from kitconcept.dsgvo.util import dsgvo_translate
+
+
+class DsgvoCheckboxWidget(CheckBoxWidget):
+
+    def __call__(self):
+        if isinstance(self.context.title, Message):
+            self.context.title = dsgvo_translate(self.context.title,
+                                                 self.request)
+        return super(DsgvoCheckboxWidget, self).__call__()
 
 
 class InvalidAccept(schema.ValidationError):
@@ -59,6 +72,16 @@ class EnhancedRegistrationForm(RegistrationForm):
 
     def __init__(self, context, request):
         super(EnhancedRegistrationForm, self).__init__(context, request)
+
+    @property
+    def form_fields(self):
+        '''
+        form_fields in the registration form is a property. We cannot
+        modify self.form_fields.
+        '''
+        form_fields = super(EnhancedRegistrationForm, self).form_fields
+        form_fields['dsgvo_accept'].custom_widget = DsgvoCheckboxWidget
+        return form_fields
 
 
 class DsgvoP4UserDataSchemaAdapter(UserDataPanelAdapter):

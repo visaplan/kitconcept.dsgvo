@@ -8,6 +8,10 @@ Changelog
 - Add development status "alpha" to list classifiers.
   [timo]
 
+- Fix P4 registration form to correctly translate messages
+  with that use ${portal_url}
+  [csenger]
+
 
 1.0.0a5 (2018-05-24)
 --------------------
