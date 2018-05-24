@@ -5,6 +5,9 @@ Changelog
 1.0.0a3 (unreleased)
 --------------------
 
+- Add jbot override for contact-info.cpt
+  [csenger]
+
 - Banner styling changes
   [csenger]
 
