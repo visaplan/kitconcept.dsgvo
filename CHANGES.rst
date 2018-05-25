@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a9 (unreleased)
+1.0.0a9 (2018-05-25)
 --------------------
 
 - Fix the path on @@close-dsgvo-info view.
