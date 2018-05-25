@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a8 (unreleased)
+1.0.0a8 (2018-05-25)
 --------------------
 
 - Fix weird profile behavior on reinstall (it wasn't uninstall/reinstalling at all).
