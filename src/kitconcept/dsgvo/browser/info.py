@@ -15,5 +15,5 @@ class SetCookieView(BrowserView):
             )
         expires = formatdate(expiration_seconds, usegmt=True)
         self.request.response.setCookie('hide-dsgvo-banner', 'true',
-                                        expires=expires)
+                                        path='/', expires=expires)
         self.request.response.setStatus(201)

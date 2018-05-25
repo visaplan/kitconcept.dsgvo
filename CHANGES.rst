@@ -5,7 +5,8 @@ Changelog
 1.0.0a9 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix the path on @@close-dsgvo-info view.
+  [sneridagh]
 
 
 1.0.0a8 (2018-05-25)
