@@ -5,7 +5,9 @@ Changelog
 1.0.0a8 (unreleased)
 --------------------
 
-- Nothing changed yet.
+- Fix weird profile behavior on reinstall (it wasn't uninstall/reinstalling at all).
+  Transfer condition of the cookie banner showing to JS.
+  [sneridagh]
 
 
 1.0.0a7 (2018-05-24)
