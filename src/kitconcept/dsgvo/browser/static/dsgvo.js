@@ -1,17 +1,34 @@
-'use strict';
+"use strict";
+
+// Lightweight getCookie https://gomakethings.com/working-with-cookies-in-vanilla-js/
+var getCookie = function(name) {
+  var value = "; " + document.cookie;
+  var parts = value.split("; " + name + "=");
+  if (parts.length == 2)
+    return parts
+      .pop()
+      .split(";")
+      .shift();
+};
+
 (function() {
   var $ = jQuery;
-  var cookieName = 'hide-dsgvo-banner';
-  var expires = 31 * 12 * 10;
+  // We rely on Plone for setting the cookie, so no heavy JS deps on JQuery cookie
   var setCookie = function() {
-    $.get('@@close-dsgvo-info');
+    $.get("@@close-dsgvo-info");
   };
-  
-  $(function () {
-    $('.dsgvo-close-banner').click(function (event) {
+
+  $(function() {
+    $(".dsgvo-close-banner").click(function(event) {
       setCookie();
-      $('.dsgvo-banner').fadeOut();
+      $(".dsgvo-banner").fadeOut();
       event.preventDefault();
     });
   });
 })();
+
+$(document).ready(function() {
+  if (!getCookie("hide-dsgvo-banner")) {
+    $(".dsgvo-banner").show();
+  }
+});

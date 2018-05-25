@@ -32,8 +32,8 @@ class DsgvoViewlet(base.ViewletBase):
     def portal_url(self):
         return api.portal.get().absolute_url()
 
-    def render(self):
-        cookie = self.request.cookies.get('hide-dsgvo-banner', False)
-        if cookie:
-            return ''
-        return super(DsgvoViewlet, self).render()
+    # def render(self):
+    #     cookie = self.request.cookies.get('hide-dsgvo-banner', False)
+    #     if cookie:
+    #         return ''
+    #     return super(DsgvoViewlet, self).render()
