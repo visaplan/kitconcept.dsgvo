@@ -5,7 +5,8 @@ Changelog
 1.0.0a11 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Add zest.pocompile to the build and add the .mo files to the release.
+  [sneridagh]
 
 
 1.0.0a10 (2018-05-28)
