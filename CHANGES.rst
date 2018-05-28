@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a11 (unreleased)
+1.0.0a11 (2018-05-28)
 ---------------------
 
 - Add zest.pocompile to the build and add the .mo files to the release.
