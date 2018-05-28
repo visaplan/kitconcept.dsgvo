@@ -2,10 +2,11 @@ Changelog
 =========
 
 
-1.0.0a10 (unreleased)
+1.0.0a10 (2018-05-28)
 ---------------------
 
-- Nothing changed yet.
+- Add missing CSS registry for Plone 5 from last fix
+  [sneridagh]
 
 
 1.0.0a9 (2018-05-25)
