@@ -46,7 +46,7 @@ msgstr ""
 #. Default: "Ich habe die <a href=\"${portal_url}/datenschutz\">Datenschutzerklärung und Widerrufhinweise</a>. gelesen und akzeptiere diese."
 #: ../userdataschema.py:29
 msgid "label_dsgvo_accept"
-msgstr "I have read the <a href='${portal_url}/datenschutz' target='_blank'> privacy policy and revocation notice</a> and I accept them."
+msgstr "Yes, I have read and consent to the use of my data as described in the <a href='${portal_url}/datenschutz' target='_blank'>privacy policy</a>.
 
 #. Default: "You have to accept the privacy policy"
 #: ../userdataschema.py:21
