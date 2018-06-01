@@ -25,7 +25,7 @@ class IKitconceptDsgvoLayer(IDefaultBrowserLayer):
 class IDsgvoUserDataSchema(Interface):
 
     dsgvo_accept = schema.Bool(
-        title=_(u'label_dsgvo_accept',
+        title=_(u'label_dsgvo_mailchimp_accept',
                 default=(
                     u'Ich habe die <a href="${portal_url}/datenschutz" '
                     u'target="_blank">'
