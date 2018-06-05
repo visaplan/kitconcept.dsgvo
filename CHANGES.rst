@@ -2,10 +2,24 @@ Changelog
 =========
 
 
-1.0.0a10 (unreleased)
+1.0.0a12 (unreleased)
 ---------------------
 
 - Nothing changed yet.
+
+
+1.0.0a11 (2018-05-28)
+---------------------
+
+- Add zest.pocompile to the build and add the .mo files to the release.
+  [sneridagh]
+
+
+1.0.0a10 (2018-05-28)
+---------------------
+
+- Add missing CSS registry for Plone 5 from last fix
+  [sneridagh]
 
 
 1.0.0a9 (2018-05-25)
