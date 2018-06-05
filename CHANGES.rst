@@ -5,7 +5,8 @@ Changelog
 1.0.0a12 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Fix translation in mailchimp form
+  [csenger]
 
 
 1.0.0a11 (2018-05-28)
