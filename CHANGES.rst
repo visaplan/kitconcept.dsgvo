@@ -5,7 +5,8 @@ Changelog
 1.0.0a13 (unreleased)
 ---------------------
 
-- Nothing changed yet.
+- Fix broken msgstr
+  [csenger]
 
 
 1.0.0a12 (2018-06-07)
