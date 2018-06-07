@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a13 (unreleased)
+1.0.0a13 (2018-06-07)
 ---------------------
 
 - Fix broken msgstr
