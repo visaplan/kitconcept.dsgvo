@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.0a12 (unreleased)
+1.0.0a12 (2018-06-07)
 ---------------------
 
 - Fix translation in mailchimp form
