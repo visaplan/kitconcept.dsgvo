@@ -14,7 +14,7 @@ long_description = '\n\n'.join([
 
 setup(
     name='kitconcept.dsgvo',
-    version='1.0.0a13',
+    version='1.0.0a14.dev0',
     description="DSGVO / GDPR compliance for Plone",
     long_description=long_description,
     # Get more from https://pypi.python.org/pypi?%3Aaction=list_classifiers
