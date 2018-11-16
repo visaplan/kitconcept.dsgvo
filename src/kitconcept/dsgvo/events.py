@@ -1,6 +1,7 @@
 from DateTime import DateTime
 
 from plone import api
+from plone.api.exc import CannotGetPortalError
 
 
 def get_ip(request):
@@ -23,7 +24,12 @@ def get_ip(request):
 
 
 def user_registered(user, event):
-    member = api.user.get(userid=user.getId())
+
+    # catch https://github.com/kitconcept/kitconcept.dsgvo/issues/2
+    try:
+        member = api.user.get(userid=user.getId())
+    except CannotGetPortalError:
+        return
     now = DateTime()
     ip = get_ip(user.REQUEST)
     member.setMemberProperties(
