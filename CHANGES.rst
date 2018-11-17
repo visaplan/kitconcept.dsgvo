@@ -2,8 +2,8 @@ Changelog
 =========
 
 
-1.0.0a14 (unreleased)
----------------------
+1.0.0 (2018-11-17)
+------------------
 
 - Fix event subscriber fired by "adduser" command
   (https://github.com/kitconcept/kitconcept.dsgvo/issues/2)
