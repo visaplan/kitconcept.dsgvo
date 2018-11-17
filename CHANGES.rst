@@ -5,7 +5,7 @@ Changelog
 1.0.0a14 (unreleased)
 ---------------------
 
-- fix/workaround for event subscriber fired by "adduser" command
+- Fix event subscriber fired by "adduser" command
   (https://github.com/kitconcept/kitconcept.dsgvo/issues/2)
   [ajung]
 
