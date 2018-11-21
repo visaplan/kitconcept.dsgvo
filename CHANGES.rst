@@ -5,7 +5,8 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add french translation
+  [tiazma]
 
 
 1.0.0 (2018-11-17)
