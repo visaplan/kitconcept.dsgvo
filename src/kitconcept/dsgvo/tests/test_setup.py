@@ -3,6 +3,12 @@
 from kitconcept.dsgvo.testing import KITCONCEPT_DSGVO_INTEGRATION_TESTING  # noqa
 from plone import api
 
+try:
+    from Products.CMFPlone.utils import get_installer
+except ImportError:
+    get_installer = None
+
+
 import unittest
 
 
@@ -14,7 +20,10 @@ class TestSetup(unittest.TestCase):
     def setUp(self):
         """Custom shared utility setup for tests."""
         self.portal = self.layer['portal']
-        self.installer = api.portal.get_tool('portal_quickinstaller')
+        if get_installer:
+            self.installer = get_installer(self.portal, self.layer['request'])
+        else:
+            self.installer = api.portal.get_tool('portal_quickinstaller')
 
     def test_product_installed(self):
         """Test if kitconcept.dsgvo is installed."""
@@ -35,7 +44,10 @@ class TestUninstall(unittest.TestCase):
 
     def setUp(self):
         self.portal = self.layer['portal']
-        self.installer = api.portal.get_tool('portal_quickinstaller')
+        if get_installer:
+            self.installer = get_installer(self.portal, self.layer['request'])
+        else:
+            self.installer = api.portal.get_tool('portal_quickinstaller')
         self.installer.uninstallProducts(['kitconcept.dsgvo'])
 
     def test_product_uninstalled(self):
