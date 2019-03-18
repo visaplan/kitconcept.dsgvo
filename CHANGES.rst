@@ -5,6 +5,9 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
+- Python 3 compatibility.
+  [pbauer]
+
 - Add french translation
   [tiazma]
 
