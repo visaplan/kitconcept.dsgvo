@@ -1,7 +1,7 @@
 # -*- coding: utf-8 -*-
 
 from Products.Five.browser import BrowserView
-from email.Utils import formatdate
+from email.utils import formatdate
 
 import time
 
