@@ -1,3 +1,4 @@
+# -*- coding: utf-8 -*-
 from DateTime import DateTime
 
 from plone import api
@@ -33,5 +34,5 @@ def user_registered(user, event):
     now = DateTime()
     ip = get_ip(user.REQUEST)
     member.setMemberProperties(
-        mapping={'dsgvo_registration_date': now,
-                 'dsgvo_registration_ip': ip})
+        mapping={"dsgvo_registration_date": now, "dsgvo_registration_ip": ip}
+    )
