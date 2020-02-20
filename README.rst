@@ -66,7 +66,10 @@ Examples
 
 This add-on can be seen in action at the following sites:
 
-- VHS-Ehrenamtsportal.de
+- VHS-Ehrenamtsportal.de (https://vhs-ehrenamtsportal.de)
+- Zeelandia Website (https://www.zeelandia.de)
+- HU Berlin Excellence Initiative (https://www.alles-beginnt-mit-einer-frage.de)
+- Talke Career Website (https://karriere.talke.com)
 
 
 Translations
