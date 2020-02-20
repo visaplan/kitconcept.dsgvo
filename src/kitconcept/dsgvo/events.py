@@ -32,7 +32,8 @@ def user_registered(user, event):
     except CannotGetPortalError:
         return
     now = DateTime()
-    ip = get_ip(user.REQUEST)
+    portal = api.portal.get()
+    ip = get_ip(portal.REQUEST)
     member.setMemberProperties(
         mapping={"dsgvo_registration_date": now, "dsgvo_registration_ip": ip}
     )
