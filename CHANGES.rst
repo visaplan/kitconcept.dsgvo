@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.0.1 (unreleased)
+1.1.0 (2020-02-20)
 ------------------
 
 - Make p.a.controlpanel dependency optional
