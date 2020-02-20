@@ -5,11 +5,13 @@ Changelog
 1.0.1 (unreleased)
 ------------------
 
-- For Plone 5.2 there is no p.a.controlpanel (it was incorporated into Products.CMFPlone).
-- Can't get request from user object anymore.
+- Make p.a.controlpanel dependency optional
   [rodfersou]
 
-- Python 3 compatibility.
+- Plone 5.2 compatibility
+  [rodfersou]
+
+- Python 3 compatibility
   [pbauer]
 
 - Add french translation
