@@ -5,7 +5,8 @@ Changelog
 1.1.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- Add bundle for Plone 5.2.x.
+  [thomasmassmann]
 
 
 1.1.0 (2020-02-20)

@@ -37,3 +37,7 @@ pyvenv.cfg
 !.gitkeep
 !.travis.yml
 !src/kitconcept
+node_modules
+Gruntfile.js
+package.json
+package-lock.json
