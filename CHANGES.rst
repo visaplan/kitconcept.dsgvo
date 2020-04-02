@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.1.1 (unreleased)
+1.1.1 (2020-04-02)
 ------------------
 
 - Add bundle for Plone 5.2.x.
