@@ -2,24 +2,23 @@
 from datetime import datetime
 from io import StringIO
 from plone import api
-from Products.CMFCore.utils import getToolByName
 from Products.Five.browser import BrowserView
 
 import csv
 
 
 class ExportUsers(BrowserView):
-    '''Export the users'''
+    """Export the users"""
 
     def __call__(self):
-        mtool = getToolByName(self.context, 'portal_membership')
+        mtool = api.portal.get_tool("portal_membership")
         members = mtool.listMembers()
-        headers = ['Name', 'Email']
+        headers = ["Name", "Email"]
         data = []
         for member in members:
             info = {
-                'Name': member.getProperty('fullname', ''),
-                'Email': member.getProperty('email', ''),
+                "Name": member.getProperty("fullname", ""),
+                "Email": member.getProperty("email", ""),
             }
             data.append(info)
 
@@ -28,9 +27,10 @@ class ExportUsers(BrowserView):
         writer.writerow(dict(zip(headers, headers)))
         writer.writerows(data)
 
-        now = datetime.now().strftime('%Y-%m-%d-%H_%M_%s')
-        filename = 'ehrenamtsportal-benutzerexport-%s.csv' % now
+        now = datetime.now().strftime("%Y-%m-%d-%H_%M_%s")
+        filename = "ehrenamtsportal-benutzerexport-%s.csv" % now
         self.request.response.setHeader(
-            'Content-Disposition', 'attachment; Filename=%s' % filename)
+            "Content-Disposition", "attachment; Filename=%s" % filename
+        )
         self.request.response.setHeader("Content-type", "text/csv")
         return out.getvalue()

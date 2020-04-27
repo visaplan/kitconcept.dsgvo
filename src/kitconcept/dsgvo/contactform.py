@@ -19,18 +19,18 @@ class IDsgvoContactInfoSchema(model.Schema):
 
     dsgvo_contact_info_text = schema.Bool(
         title=_(
-            u'label_dsgvo_info',
+            u"label_dsgvo_info",
             default=(
-                u'Ihre Anfrage wird verschlüsselt per https an unseren '
-                u'Server geschickt. Sie erklären sich damit einverstanden, '
-                u'dass wir die Angaben zur Beantwortung Ihrer Anfrage '
-                u'verwenden dürfen. Hier finden Sie unsere '
+                u"Ihre Anfrage wird verschlüsselt per https an unseren "
+                u"Server geschickt. Sie erklären sich damit einverstanden, "
+                u"dass wir die Angaben zur Beantwortung Ihrer Anfrage "
+                u"verwenden dürfen. Hier finden Sie unsere "
                 u'<a href="${portal_url}/datenschutz" '
                 u'target="_blank">Datenschutzerklärung '
-                u'und Widerrufhinweise</a>.')),
-        description=_(
-            u'help_dsgvo_info',
-            default=u''),
+                u"und Widerrufhinweise</a>."
+            ),
+        ),
+        description=_(u"help_dsgvo_info", default=u""),
         default=True,
     )
 
@@ -40,6 +40,5 @@ class ContactFormExtender(extensible.FormExtender):
 
     def update(self):
         fields = field.Fields(IDsgvoContactInfoSchema)
-        fields['dsgvo_contact_info_text'].widgetFactory = \
-            DsgvoSingleCheckBoxFieldWidget
+        fields["dsgvo_contact_info_text"].widgetFactory = DsgvoSingleCheckBoxFieldWidget
         self.add(fields)

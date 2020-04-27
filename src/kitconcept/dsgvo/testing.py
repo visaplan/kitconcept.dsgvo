@@ -21,29 +21,24 @@ class KitconceptDsgvoLayer(PloneSandboxLayer):
         self.loadZCML(package=kitconcept.dsgvo)
 
     def setUpPloneSite(self, portal):
-        applyProfile(portal, 'kitconcept.dsgvo:default')
+        applyProfile(portal, "kitconcept.dsgvo:default")
 
 
 KITCONCEPT_DSGVO_FIXTURE = KitconceptDsgvoLayer()
 
 
 KITCONCEPT_DSGVO_INTEGRATION_TESTING = IntegrationTesting(
-    bases=(KITCONCEPT_DSGVO_FIXTURE,),
-    name='KitconceptDsgvoLayer:IntegrationTesting'
+    bases=(KITCONCEPT_DSGVO_FIXTURE,), name="KitconceptDsgvoLayer:IntegrationTesting"
 )
 
 
 KITCONCEPT_DSGVO_FUNCTIONAL_TESTING = FunctionalTesting(
     bases=(KITCONCEPT_DSGVO_FIXTURE, z2.ZSERVER_FIXTURE),
-    name='KitconceptDsgvoLayer:FunctionalTesting'
+    name="KitconceptDsgvoLayer:FunctionalTesting",
 )
 
 
 KITCONCEPT_DSGVO_ACCEPTANCE_TESTING = FunctionalTesting(
-    bases=(
-        KITCONCEPT_DSGVO_FIXTURE,
-        REMOTE_LIBRARY_BUNDLE_FIXTURE,
-        z2.ZSERVER_FIXTURE
-    ),
-    name='KitconceptDsgvoLayer:AcceptanceTesting'
+    bases=(KITCONCEPT_DSGVO_FIXTURE, REMOTE_LIBRARY_BUNDLE_FIXTURE, z2.ZSERVER_FIXTURE),
+    name="KitconceptDsgvoLayer:AcceptanceTesting",
 )

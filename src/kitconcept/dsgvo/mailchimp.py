@@ -17,15 +17,16 @@ from kitconcept.dsgvo.widget import DsgvoSingleCheckBoxFieldWidget
 class IDsgvoMailchimpSchema(Interface):
 
     dsgvo_accept = schema.Bool(
-        title=_(u'label_dsgvo_mailchimp_accept',
-                default=(
-                    u'Ich habe die <a href="${portal_url}/datenschutz" '
-                    u'target="_blank">'
-                    u'Datenschutzerklärung und Widerrufhinweise</a> '
-                    u'gelesen und akzeptiere diese.')),
-        description=_(
-            u'help_dsgvo_mailchimp_accept',
-            default=u''),
+        title=_(
+            u"label_dsgvo_mailchimp_accept",
+            default=(
+                u'Ich habe die <a href="${portal_url}/datenschutz" '
+                u'target="_blank">'
+                u"Datenschutzerklärung und Widerrufhinweise</a> "
+                u"gelesen und akzeptiere diese."
+            ),
+        ),
+        description=_(u"help_dsgvo_mailchimp_accept", default=u""),
         required=True,
         constraint=validateAccept,
     )
@@ -36,6 +37,5 @@ class NewsletterSubscriberFormExtender(extensible.FormExtender):
 
     def update(self):
         fields = field.Fields(IDsgvoMailchimpSchema)
-        fields['dsgvo_accept'].widgetFactory = \
-            DsgvoSingleCheckBoxFieldWidget
+        fields["dsgvo_accept"].widgetFactory = DsgvoSingleCheckBoxFieldWidget
         self.add(fields)

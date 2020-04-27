@@ -11,10 +11,15 @@ from kitconcept.dsgvo import _
 
 def validateAccept(value):
     if value is not True:
-        raise Invalid(_(
-            u'label_dsgvo_accept_invalid',
-            default=(u'Bitte akzeptieren sie die Datenschutzerklärung und '
-                     u'Widerrufhinweise.')))
+        raise Invalid(
+            _(
+                u"label_dsgvo_accept_invalid",
+                default=(
+                    u"Bitte akzeptieren sie die Datenschutzerklärung und "
+                    u"Widerrufhinweise."
+                ),
+            )
+        )
     return True
 
 
@@ -25,15 +30,16 @@ class IKitconceptDsgvoLayer(IDefaultBrowserLayer):
 class IDsgvoUserDataSchema(Interface):
 
     dsgvo_accept = schema.Bool(
-        title=_(u'label_dsgvo_mailchimp_accept',
-                default=(
-                    u'Ich habe die <a href="${portal_url}/datenschutz" '
-                    u'target="_blank">'
-                    u'Datenschutzerklärung und Widerrufhinweise</a> '
-                    u'gelesen und akzeptiere diese.')),
-        description=_(
-            u'help_dsgvo_accept',
-            default=u''),
+        title=_(
+            u"label_dsgvo_mailchimp_accept",
+            default=(
+                u'Ich habe die <a href="${portal_url}/datenschutz" '
+                u'target="_blank">'
+                u"Datenschutzerklärung und Widerrufhinweise</a> "
+                u"gelesen und akzeptiere diese."
+            ),
+        ),
+        description=_(u"help_dsgvo_accept", default=u""),
         required=True,
         constraint=validateAccept,
     )

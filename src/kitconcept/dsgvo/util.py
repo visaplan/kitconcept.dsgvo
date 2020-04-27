@@ -8,12 +8,11 @@ from zope.i18nmessageid import Message
 
 
 def dsgvo_translate(message, request):
-    '''
+    """
     translate the message and interpolate ${site_title} and ${portal_url}
-    '''
+    """
     portal = api.portal.get()
-    portal_state = getMultiAdapter((portal, request),
-                                   name=u'plone_portal_state')
+    portal_state = getMultiAdapter((portal, request), name=u"plone_portal_state")
     site_title = escape(safe_unicode(portal_state.navigation_root_title()))
     portal_url = portal_state.portal_url()
 
@@ -22,12 +21,7 @@ def dsgvo_translate(message, request):
     # a mapping.
     # See https://github.com/zopefoundation/zope.i18n/issues/9
     translation = translate(
-        Message(
-            message,
-            mapping={
-                'portal_url': portal_url,
-                'site_title': site_title,
-                }
-            ),
-        context=request)
+        Message(message, mapping={"portal_url": portal_url, "site_title": site_title}),
+        context=request,
+    )
     return translation
