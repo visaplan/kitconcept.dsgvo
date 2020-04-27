@@ -23,7 +23,9 @@ class ExportUsersTestCase(unittest.TestCase):
             email="user@plone.org", username="user", properties={"fullname": "User"}
         )
         if PY2:
-            self.assertEquals("Name,Email\r\n,\r\n,\r\nUser,user@plone.org\r\n", self.view())
+            self.assertEquals(
+                "Name,Email\r\n,\r\n,\r\nUser,user@plone.org\r\n", self.view()
+            )
         else:
             self.assertEquals("Name,Email\r\n,\r\nUser,user@plone.org\r\n", self.view())
 
