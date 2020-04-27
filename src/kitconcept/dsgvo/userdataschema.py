@@ -24,7 +24,7 @@ class UserDataPanelExtender(extensible.FormExtender):
     def update(self):
         fields = field.Fields(IDsgvoUserDataSchema)
         # Users have already accepted.
-        fields = fields.omit('dsgvo_accept')
+        fields = fields.omit("dsgvo_accept")
         self.add(fields)
 
 
@@ -33,8 +33,7 @@ class RegistrationPanelExtender(extensible.FormExtender):
 
     def update(self):
         fields = field.Fields(IDsgvoUserDataSchema)
-        fields['dsgvo_accept'].widgetFactory = \
-            DsgvoSingleCheckBoxFieldWidget
+        fields["dsgvo_accept"].widgetFactory = DsgvoSingleCheckBoxFieldWidget
         self.add(fields)
 
 
@@ -44,5 +43,5 @@ class AddUserFormExtender(extensible.FormExtender):
     def update(self):
         fields = field.Fields(IDsgvoUserDataSchema)
         # management form doesn't need this field
-        fields = fields.omit('dsgvo_accept')
+        fields = fields.omit("dsgvo_accept")
         self.add(fields)

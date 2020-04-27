@@ -24,11 +24,11 @@ class DsgvoSingleCheckBoxWidget(SingleCheckBoxWidget):
     site name
     """
 
-    klass = u'dsgvo-single-checkbox-widget'
+    klass = u"dsgvo-single-checkbox-widget"
 
     @property
     def label(self):
-        return getattr(self, '_label', u'')
+        return getattr(self, "_label", u"")
 
     @label.setter
     def label(self, value):
@@ -36,7 +36,7 @@ class DsgvoSingleCheckBoxWidget(SingleCheckBoxWidget):
 
     @property
     def description(self):
-        return getattr(self, '_description', u'')
+        return getattr(self, "_description", u"")
 
     @description.setter
     def description(self, value):
