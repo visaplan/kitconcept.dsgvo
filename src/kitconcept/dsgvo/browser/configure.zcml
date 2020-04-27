@@ -32,4 +32,12 @@
       name="kitconcept.dsgvo"
       />
 
+  <browser:page
+      for="Products.CMFPlone.interfaces.IPloneSiteRoot"
+      name="exportusers"
+      class=".users.ExportUsers"
+      permission="cmf.ManagePortal"
+      layer="kitconcept.dsgvo.interfaces.IKitconceptDsgvoLayer"
+      />
+
 </configure>
