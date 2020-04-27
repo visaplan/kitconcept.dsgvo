@@ -28,7 +28,7 @@ class ExportUsers(BrowserView):
         writer.writerows(data)
 
         now = datetime.now().strftime("%Y-%m-%d-%H_%M_%s")
-        filename = "ehrenamtsportal-benutzerexport-%s.csv" % now
+        filename = "export-users-%s.csv" % now
         self.request.response.setHeader(
             "Content-Disposition", "attachment; Filename=%s" % filename
         )
