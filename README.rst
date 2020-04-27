@@ -44,7 +44,7 @@ Features
 - [X] Extensible registration form with user confirmation
 - [X] Contact form with information text
 - [X] Store username, date, time and IP address of the user on registration
-- [ ] Export user data
+- [X] Export user data
 
 Registration Form
 -----------------
@@ -60,6 +60,10 @@ Default text (German)::
 
     "Ihre Anfrage wird verschlüsselt per https an unseren Server geschickt. Sie erklären sich damit einverstanden, dass wir die Angaben zur Beantwortung Ihrer Anfrage verwenden dürfen. Hier finden Sie unsere [Link]Datenschutzerklärung und Widerrufhinweise[/Link]."
 
+User Export
+-----------
+
+As administrator you can call http://localhost:8080/Plone/export-users. This will return a CSV-File with the full name and username of all users of the portal.
 
 Examples
 ========
