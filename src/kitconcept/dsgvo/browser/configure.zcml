@@ -34,7 +34,7 @@
 
   <browser:page
       for="Products.CMFPlone.interfaces.IPloneSiteRoot"
-      name="exportusers"
+      name="export-users"
       class=".users.ExportUsers"
       permission="cmf.ManagePortal"
       layer="kitconcept.dsgvo.interfaces.IKitconceptDsgvoLayer"
