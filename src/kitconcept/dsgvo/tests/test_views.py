@@ -2,6 +2,7 @@
 from kitconcept.dsgvo.interfaces import IKitconceptDsgvoLayer
 from kitconcept.dsgvo.testing import KITCONCEPT_DSGVO_INTEGRATION_TESTING  # noqa
 from plone import api
+from six import PY2
 from zope.interface import alsoProvides
 
 import unittest
@@ -21,7 +22,13 @@ class ExportUsersTestCase(unittest.TestCase):
         api.user.create(
             email="user@plone.org", username="user", properties={"fullname": "User"}
         )
-        self.assertEquals(u"Name,Email\r\n,\r\nUser,user@plone.org\r\n", self.view())
+        if PY2:
+            self.assertEquals("Name,Email\r\n,\r\n,\r\nUser,user@plone.org\r\n", self.view())
+        else:
+            self.assertEquals("Name,Email\r\n,\r\nUser,user@plone.org\r\n", self.view())
 
     def test_export_users_empty(self):
-        self.assertEquals(u"Name,Email\r\n,\r\n", self.view())
+        if PY2:
+            self.assertEquals("Name,Email\r\n,\r\n,\r\n", self.view())
+        else:
+            self.assertEquals("Name,Email\r\n,\r\n", self.view())

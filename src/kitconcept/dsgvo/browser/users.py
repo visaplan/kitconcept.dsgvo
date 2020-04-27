@@ -1,6 +1,6 @@
 # -*- coding: UTF-8 -*-
 from datetime import datetime
-from io import StringIO
+from six import StringIO
 from plone import api
 from Products.Five.browser import BrowserView
 
@@ -13,12 +13,12 @@ class ExportUsers(BrowserView):
     def __call__(self):
         mtool = api.portal.get_tool("portal_membership")
         members = mtool.listMembers()
-        headers = ["Name", "Email"]
+        headers = [u"Name", u"Email"]
         data = []
         for member in members:
             info = {
-                "Name": member.getProperty("fullname", ""),
-                "Email": member.getProperty("email", ""),
+                u"Name": member.getProperty("fullname", ""),
+                u"Email": member.getProperty("email", ""),
             }
             data.append(info)
 
