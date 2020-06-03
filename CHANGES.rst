@@ -5,8 +5,11 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
-- fixed deprecation warning on cgi.escape
+- Fixed deprecation warning on cgi.escape
   [ajung]
+
+- Add norwegian translation
+  [espenmn]
 
 
 1.2.0 (2020-04-27)
