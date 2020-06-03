@@ -5,7 +5,8 @@ Changelog
 1.2.1 (unreleased)
 ------------------
 
-- Nothing changed yet.
+- fixed deprecation warning on cgi.escape
+  [ajung]
 
 
 1.2.0 (2020-04-27)
