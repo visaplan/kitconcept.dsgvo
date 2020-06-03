@@ -2,7 +2,7 @@ Changelog
 =========
 
 
-1.2.1 (unreleased)
+1.3.0 (2020-06-03)
 ------------------
 
 - Fixed deprecation warning on cgi.escape
