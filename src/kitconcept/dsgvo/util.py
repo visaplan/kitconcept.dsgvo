@@ -1,6 +1,9 @@
 # -*- coding: utf-8 -*-
 from Products.CMFPlone.utils import safe_unicode
-from cgi import escape
+try:
+    from cgi import escape
+except ImportError:
+    from html import escape
 from plone import api
 from zope.component import getMultiAdapter
 from zope.i18n import translate
