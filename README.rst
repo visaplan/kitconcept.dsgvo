@@ -6,8 +6,8 @@
 kitconcept.dsgvo
 ==============================================================================
 
-.. image:: https://travis-ci.org/kitconcept/kitconcept.dsgvo.svg?branch=master
-    :target: https://travis-ci.org/kitconcept/kitconcept.dsgvo
+.. image:: https://github.com/kitconcept/kitconcept.dsgvo/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/kitconcept/kitconcept.dsgvo/actions/workflows/tests.yml
 
 .. image:: https://img.shields.io/pypi/status/kitconcept.dsgvo.svg
     :target: https://pypi.python.org/pypi/kitconcept.dsgvo/
