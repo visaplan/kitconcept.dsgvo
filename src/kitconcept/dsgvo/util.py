@@ -1,5 +1,6 @@
 # -*- coding: utf-8 -*-
 from Products.CMFPlone.utils import safe_unicode
+
 try:
     from cgi import escape
 except ImportError:

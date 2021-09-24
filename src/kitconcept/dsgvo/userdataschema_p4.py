@@ -63,8 +63,7 @@ class IDsgvoP4UserDataSchema(IUserDataSchema):
 @implementer(IUserDataSchemaProvider)
 class EnhancedUserDataSchemaProvider(object):
     def getSchema(self):
-        """
-        """
+        """"""
         return IDsgvoP4UserDataSchema
 
 
