@@ -2,10 +2,23 @@ Changelog
 =========
 
 
-1.3.1 (unreleased)
+2.0.1 (unreleased)
 ------------------
 
 - Nothing changed yet.
+
+
+2.0.0 (2021-09-24)
+------------------
+
+- Add support for Python 3.8 and 3.9.
+  [tisto]
+
+- Drop support for Python 2.7
+  [tisto]
+
+- Drop support for Plone 4.3, 5.0, and 5.1
+  [tisto]
 
 
 1.3.0 (2020-06-03)

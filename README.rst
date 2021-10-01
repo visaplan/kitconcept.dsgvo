@@ -6,8 +6,8 @@
 kitconcept.dsgvo
 ==============================================================================
 
-.. image:: https://travis-ci.org/kitconcept/kitconcept.dsgvo.svg?branch=master
-    :target: https://travis-ci.org/kitconcept/kitconcept.dsgvo
+.. image:: https://github.com/kitconcept/kitconcept.dsgvo/actions/workflows/tests.yml/badge.svg
+    :target: https://github.com/kitconcept/kitconcept.dsgvo/actions/workflows/tests.yml
 
 .. image:: https://img.shields.io/pypi/status/kitconcept.dsgvo.svg
     :target: https://pypi.python.org/pypi/kitconcept.dsgvo/
@@ -99,6 +99,17 @@ Install kitconcept.dsgvo by adding it to your buildout::
 
 and then running ``bin/buildout``
 
+
+Compatibility
+=============
+
++----------+-----------+-----------+-----------+-----------+
+|  Version | Plone 5.2 | Plone 5.1 | Plone 5.0 | Plone 4.3 |
++----------+-----------+-----------+-----------+-----------+
+|  2.x     | ☑         |           |           |           |
++----------+-----------+-----------+-----------+-----------+
+|  1.x     | ☑         | ☑         | ☑         | ☑         |
++----------+-----------+-----------+-----------+-----------+
 
 Contribute
 ==========
